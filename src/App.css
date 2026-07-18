@@ -16,6 +16,23 @@
     outline-offset: 2px;
   }
 }
+hr {
+  padding: 20px;
+}
+.video-card {
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgb(226 232 240);
+  background: white;
+  box-shadow: 0 8px 24px rgba(15,23,42,.06);
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  display: block;
+}
 
 .hero {
   position: relative;
@@ -103,6 +120,11 @@
     border-bottom: 1px solid var(--border);
   }
 }
+#next-steps ul {
+  list-style: armenian;
+  padding: 0;
+  margin: 0, auto;
+}
 
 #next-steps ul {
   list-style: none;
@@ -181,4 +203,75 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+#contact.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(148, 163, 184, 0.25), transparent 32%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.14), transparent 34%),
+    rgb(2 6 23);
+  color: white;
+  padding: clamp(4rem, 10vw, 9rem) 2rem;
+  margin-top: 4rem;
+}
+
+.contact-inner {
+  width: min(100%, 1100px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-inner h2 {
+  margin-top: 1.6rem;
+  max-width: 1050px;
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.88;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+}
+
+.contact-inner p {
+  margin-top: 2rem;
+  max-width: 760px;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.8;
+  color: rgb(203 213 225);
+}
+
+.contact-actions {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-primary,
+.contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 1rem;
+  padding: 1rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contact-primary {
+  background: white;
+  color: rgb(2 6 23);
+}
+
+.contact-secondary {
+  border: 1px solid rgb(51 65 85);
+  background: rgb(15 23 42);
+  color: white;
 }
