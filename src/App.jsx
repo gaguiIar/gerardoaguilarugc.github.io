@@ -69,7 +69,7 @@ const contentLibrary = [
     eyebrow: "Lifestyle, Hospitality, Food",
     title: "Travel UGC",
     description: "",
-    videos: ["","", "", ""],
+    videos: ["1217242903"],
   },
   {
     eyebrow: "Builder and Explainer",
@@ -550,20 +550,20 @@ export default function App() {
 
           <section id="work" className="scroll-mt-6 space-y-6">
             <div className="max-w-3xl">
-              <SectionLabel>Featured portfolio</SectionLabel>
-
+              {/* <SectionLabel>Featured portfolio</SectionLabel> */}
+{/* 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
                 Why should you work with me? 
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate-600">
                 Fast turnaround, Multiple hook options/easily changable, raw footage available, script writing, editing, usage rights available, comfort with revisions, and business relationship orientated.
-              </p>
+              </p> */}
             </div>
 
-            {featuredVideos.map((video) => (
+            {/* {featuredVideos.map((video) => (
               <FeaturedVideoBlock key={video.title} video={video} />
-            ))}
+            ))} */}
           </section>
            <Services />
 
